@@ -1,0 +1,65 @@
+{
+  "name": "@x402r/refund",
+  "version": "0.0.0",
+  "description": "x402 refund extension - enables merchants to route payments to DepositRelay contracts via escrow",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": {
+        "types": "./dist/esm/index.d.mts",
+        "default": "./dist/esm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{ts,js,cjs,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,js,cjs,json,md}\""
+  },
+  "keywords": [
+    "x402",
+    "payment",
+    "protocol",
+    "refund",
+    "escrow",
+    "dispute-resolution"
+  ],
+  "license": "Apache-2.0",
+  "author": "Coinbase Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coinbase/x402r-extensions"
+  },
+  "dependencies": {
+    "@whoislewys/predict-deterministic-address": "^1.1.2",
+    "viem": "^2.39.3"
+  },
+  "peerDependencies": {
+    "@x402/core": "^2.0.0",
+    "@x402/evm": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "prettier": "^3.5.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3"
+  }
+}

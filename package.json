@@ -1,0 +1,26 @@
+{
+  "name": "x402r-extensions",
+  "version": "0.0.0",
+  "private": true,
+  "description": "x402 refund extension - standalone repository",
+  "license": "Apache-2.0",
+  "author": "Coinbase Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coinbase/x402r-extensions"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "pnpm --filter './packages/*' build",
+    "lint": "pnpm --filter './packages/*' lint",
+    "format": "prettier --write \"**/*.{ts,js,cjs,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,js,cjs,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.5.2",
+    "typescript": "^5.7.3"
+  }
+}
