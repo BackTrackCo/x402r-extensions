@@ -1,6 +1,6 @@
 {
   "name": "@x402r/extensions",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "x402 extensions - parent package for x402 extensions",
   "type": "module",
   "main": "./index.js",
@@ -18,7 +18,7 @@
     "refund.js",
     "refund.d.ts"
   ],
-  "license": "BUSL-1.1",
+  "license": "MIT",
   "author": "Coinbase Inc.",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@x402r/refund": "^0.0.3"
+    "@x402r/refund": "^0.0.4"
   },
   "peerDependencies": {
     "@x402/core": "^2.0.0",
