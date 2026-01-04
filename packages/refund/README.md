@@ -5,7 +5,12 @@ Refund Helper Extension for x402 - enables merchants to route payments to Deposi
 ## Installation
 
 ```bash
-npm install @x402r/extensions/refund
+npm install @x402r/extensions
+```
+
+Then import from the subpath:
+```typescript
+import { refundable, withRefund } from '@x402r/extensions/refund';
 ```
 
 ### Peer Dependencies
@@ -136,4 +141,4 @@ See the [examples directory](../../examples/) for complete working examples:
 
 ## License
 
-Apache-2.0
+BUSL-1.1

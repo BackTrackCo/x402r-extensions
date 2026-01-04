@@ -20,11 +20,16 @@ This repository contains the refund extension for x402, which enables merchants 
 ### Install the Package
 
 ```bash
-npm install @x402r/extensions/refund
+npm install @x402r/extensions
 # or
-pnpm add @x402r/extensions/refund
+pnpm add @x402r/extensions
 # or
-yarn add @x402r/extensions/refund
+yarn add @x402r/extensions
+```
+
+Then import from the subpath:
+```typescript
+import { refundable, withRefund } from '@x402r/extensions/refund';
 ```
 
 ### Peer Dependencies
@@ -114,4 +119,4 @@ pnpm dev
 
 ## License
 
-Apache-2.0
+BUSL-1.1
