@@ -116,7 +116,3 @@ pnpm build
 cd examples/server
 pnpm dev
 ```
-
-## License
-
-BUSL-1.1
