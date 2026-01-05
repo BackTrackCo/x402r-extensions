@@ -1,6 +1,6 @@
 {
   "name": "@x402r/refund",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "x402 refund extension - enables merchants to route payments to DepositRelay contracts via escrow",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
@@ -39,7 +39,7 @@
     "escrow",
     "dispute-resolution"
   ],
-  "license": "BUSL-1.1",
+  "license": "MIT",
   "author": "Coinbase Inc.",
   "repository": {
     "type": "git",

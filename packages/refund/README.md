@@ -141,4 +141,4 @@ See the [examples directory](../../examples/) for complete working examples:
 
 ## License
 
-BUSL-1.1
+MIT

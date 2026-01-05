@@ -1,9 +1,9 @@
 {
   "name": "x402r-extensions",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "private": true,
   "description": "x402 refund extension - standalone repository",
-  "license": "BUSL-1.1",
+  "license": "MIT",
   "author": "Coinbase Inc.",
   "repository": {
     "type": "git",
